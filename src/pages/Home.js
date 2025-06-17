@@ -3,8 +3,7 @@ import Hero from '../components/Hero';
 
 export default function Home() {
   return (
-    <div>
-      <h2>Hello, I'm Peter Wasonga — welcome to my portfolio!</h2>
+    <div style={{ background: '#000000' }}>
       <Hero />
     </div>
   );

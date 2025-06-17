@@ -2,6 +2,15 @@ import React from 'react';
 import './Hero.css';
 
 export default function Hero() {
+  const handleViewWork = () => {
+    window.open('https://github.com/Truepele001', '_blank');
+  };
+
+  const handleDownloadCV = () => {
+    // You can replace this with an actual CV download link
+    alert('CV download will be available soon!');
+  };
+
   return (
     <section className="hero">
       <div className="hero-container">
@@ -41,13 +50,13 @@ export default function Hero() {
           </div>
           
           <div className="hero-actions">
-            <button className="btn-primary">
+            <button className="btn-primary" onClick={handleViewWork}>
               <span>View My Work</span>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <path d="M7 17L17 7M17 7H7M17 7V17"/>
               </svg>
             </button>
-            <button className="btn-secondary">
+            <button className="btn-secondary" onClick={handleDownloadCV}>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <path d="M21 15V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V15"/>
                 <polyline points="7,10 12,15 17,10"/>
