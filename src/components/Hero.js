@@ -3,7 +3,7 @@ import './Hero.css';
 
 export default function Hero() {
   const handleViewWork = () => {
-    window.open('https://github.com/Truepele001', '_blank');
+    window.location.href = '/work';
   };
 
   const handleDownloadCV = () => {
