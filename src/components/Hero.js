@@ -99,10 +99,16 @@ export default function Hero() {
           </div>
         </div>
       </div>
-      
-      <div className="hero-scroll-indicator">
-        <div className="scroll-line"></div>
-        <span>Scroll to explore</span>
+      <div className="hero-socials">
+        <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+          <img src="/icons/github.svg" alt="GitHub" />
+        </a>
+        <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
+          <img src="/icons/linkedin.svg" alt="LinkedIn" />
+        </a>
+        <a href="mailto:youremail@example.com">
+          <img src="/icons/email.svg" alt="Email" />
+        </a>
       </div>
     </section>
   );
