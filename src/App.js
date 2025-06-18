@@ -1,7 +1,7 @@
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
-import Projects from './pages/Projects';
+import Work from './pages/Work';
 import Contact from './pages/Contact';
 import { Routes, Route } from 'react-router-dom';
 import { useEffect } from 'react';
@@ -18,7 +18,8 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/projects" element={<Projects />} />
+        <Route path="/work" element={<Work />} />
+        <Route path="/projects" element={<Work />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
