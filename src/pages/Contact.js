@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { supabase } from '../lib/supabase';
+import { supabase, isSupabaseConfigured } from '../lib/supabase';
 import './Contact.css';
 
 export default function Contact() {
@@ -23,6 +23,13 @@ export default function Contact() {
     e.preventDefault();
     setIsSubmitting(true);
     setSubmitStatus(null);
+
+    // Check if Supabase is configured
+    if (!isSupabaseConfigured) {
+      setSubmitStatus('error');
+      setIsSubmitting(false);
+      return;
+    }
 
     try {
       const { data, error } = await supabase
@@ -117,6 +124,16 @@ export default function Contact() {
           </div>
 
           <form className="contact-form" onSubmit={handleSubmit}>
+            {!isSupabaseConfigured && (
+              <div className="status-message error" style={{ marginBottom: '1rem' }}>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <circle cx="12" cy="12" r="10"/>
+                  <path d="M15 9L9 15M9 9L15 15"/>
+                </svg>
+                Contact form is temporarily unavailable. Please email me directly at wasonga@bricklabsai.org
+              </div>
+            )}
+
             <div className="form-group">
               <label htmlFor="name">Name</label>
               <input
@@ -127,6 +144,7 @@ export default function Contact() {
                 onChange={handleChange}
                 required
                 placeholder="Your full name"
+                disabled={!isSupabaseConfigured}
               />
             </div>
 
@@ -140,6 +158,7 @@ export default function Contact() {
                 onChange={handleChange}
                 required
                 placeholder="your.email@example.com"
+                disabled={!isSupabaseConfigured}
               />
             </div>
 
@@ -153,6 +172,7 @@ export default function Contact() {
                 onChange={handleChange}
                 required
                 placeholder="What's this about?"
+                disabled={!isSupabaseConfigured}
               />
             </div>
 
@@ -166,13 +186,14 @@ export default function Contact() {
                 required
                 rows="6"
                 placeholder="Tell me about your project or idea..."
+                disabled={!isSupabaseConfigured}
               ></textarea>
             </div>
 
             <button 
               type="submit" 
               className="submit-btn"
-              disabled={isSubmitting}
+              disabled={isSubmitting || !isSupabaseConfigured}
             >
               {isSubmitting ? (
                 <>
@@ -181,7 +202,7 @@ export default function Contact() {
                 </>
               ) : (
                 <>
-                  Send Message
+                  {isSupabaseConfigured ? 'Send Message' : 'Contact Form Unavailable'}
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                     <path d="M7 17L17 7M17 7H7M17 7V17"/>
                   </svg>
@@ -205,7 +226,10 @@ export default function Contact() {
                   <circle cx="12" cy="12" r="10"/>
                   <path d="M15 9L9 15M9 9L15 15"/>
                 </svg>
-                Failed to send message. Please try again or email me directly.
+                {isSupabaseConfigured 
+                  ? 'Failed to send message. Please try again or email me directly.'
+                  : 'Contact form is unavailable. Please email me directly at wasonga@bricklabsai.org'
+                }
               </div>
             )}
           </form>
