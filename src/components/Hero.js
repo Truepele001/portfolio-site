@@ -2,76 +2,65 @@ import React from 'react';
 import './Hero.css';
 
 export default function Hero() {
-  const handleViewWork = () => {
-    window.location.href = '/work';
-  };
-
-  const handleDownloadCV = () => {
-    // You can replace this with an actual CV download link
-    alert('CV download will be available soon!');
-  };
-
   return (
     <section className="hero">
       <div className="hero-container">
         <div className="hero-content">
           <div className="hero-badge">
             <span className="status-indicator"></span>
-            Available for work
+            Live News Updates
           </div>
           
           <h1 className="hero-title">
-            Hi, I'm <span className="highlight">Peter Wasonga</span>
+            Stay <span className="highlight">Informed</span> with Latest News
           </h1>
           
           <h2 className="hero-subtitle">
-            Junior Frontend Engineer & AI Enthusiast
+            Your trusted source for breaking news and current events
           </h2>
           
           <p className="hero-description">
-            I craft beautiful, responsive web experiences with modern technologies. 
-            Passionate about clean code, user experience, and bringing ideas to life 
-            through innovative digital solutions.
+            Get real-time news updates from reliable sources around the world. 
+            Stay connected with what matters most through our comprehensive 
+            news coverage and in-depth analysis.
           </p>
           
           <div className="hero-stats">
             <div className="stat">
-              <span className="stat-number">10+</span>
-              <span className="stat-label">Projects Completed</span>
+              <span className="stat-number">24/7</span>
+              <span className="stat-label">Live Updates</span>
             </div>
             <div className="stat">
-              <span className="stat-number">2+</span>
-              <span className="stat-label">Years Experience</span>
+              <span className="stat-number">100+</span>
+              <span className="stat-label">News Sources</span>
             </div>
             <div className="stat">
-              <span className="stat-number">100%</span>
-              <span className="stat-label">Client Satisfaction</span>
+              <span className="stat-number">50K+</span>
+              <span className="stat-label">Daily Readers</span>
             </div>
           </div>
           
           <div className="hero-actions">
-            <button className="btn-primary" onClick={handleViewWork}>
-              <span>View My Work</span>
+            <button className="btn-primary" onClick={() => window.scrollTo({ top: window.innerHeight, behavior: 'smooth' })}>
+              <span>Read Latest News</span>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <path d="M7 17L17 7M17 7H7M17 7V17"/>
               </svg>
             </button>
-            <button className="btn-secondary" onClick={handleDownloadCV}>
+            <button className="btn-secondary" onClick={() => window.location.href = '#categories'}>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="M21 15V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V15"/>
-                <polyline points="7,10 12,15 17,10"/>
-                <line x1="12" y1="15" x2="12" y2="3"/>
+                <path d="M4 6H20M4 12H20M4 18H20"/>
               </svg>
-              Download CV
+              Browse Categories
             </button>
           </div>
           
           <div className="hero-location">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-              <path d="M21 10C21 17L12 23L3 10C3 6 7 2 12 2S21 6 21 10Z"/>
-              <circle cx="12" cy="10" r="3"/>
+              <circle cx="12" cy="12" r="3"/>
+              <path d="M12 1V5M12 19V23M4.22 4.22L7.05 7.05M16.95 16.95L19.78 19.78M1 12H5M19 12H23M4.22 19.78L7.05 16.95M16.95 7.05L19.78 4.22"/>
             </svg>
-            <span>Nairobi, Kenya</span>
+            <span>Global News Coverage</span>
           </div>
         </div>
         
@@ -80,26 +69,28 @@ export default function Hero() {
             <div className="hero-image">
               <div className="image-placeholder">
                 <svg width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-                  <path d="M20 21V19A4 4 0 0 0 16 15H8A4 4 0 0 0 4 19V21"/>
-                  <circle cx="12" cy="7" r="4"/>
+                  <path d="M14 2H6A2 2 0 0 0 4 4V20A2 2 0 0 0 6 22H18A2 2 0 0 0 20 20V8Z"/>
+                  <polyline points="14,2 14,8 20,8"/>
+                  <line x1="16" y1="13" x2="8" y2="13"/>
+                  <line x1="16" y1="17" x2="8" y2="17"/>
+                  <polyline points="10,9 9,9 8,9"/>
                 </svg>
               </div>
             </div>
             <div className="floating-elements">
               <div className="floating-card tech-card">
-                <span>React</span>
+                <span>Breaking</span>
               </div>
               <div className="floating-card tech-card">
-                <span>JavaScript</span>
+                <span>Sports</span>
               </div>
               <div className="floating-card tech-card">
-                <span>Node.js</span>
+                <span>Tech</span>
               </div>
             </div>
           </div>
         </div>
       </div>
-      
     </section>
   );
 }
