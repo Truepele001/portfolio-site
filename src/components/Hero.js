@@ -8,34 +8,34 @@ export default function Hero() {
         <div className="hero-content">
           <div className="hero-badge">
             <span className="status-indicator"></span>
-            Breaking News
+            Live News Updates
           </div>
           
           <h1 className="hero-title">
-            Stay <span className="highlight">Informed</span> with Global News
+            Stay <span className="highlight">Informed</span> with Latest News
           </h1>
           
           <h2 className="hero-subtitle">
-            Your trusted source for breaking news and in-depth analysis
+            Your trusted source for breaking news and current events
           </h2>
           
           <p className="hero-description">
-            Get real-time news updates from credible sources worldwide. 
-            Stay connected with comprehensive coverage, expert analysis, 
-            and breaking stories that matter most.
+            Get real-time news updates from reliable sources around the world. 
+            Stay connected with what matters most through our comprehensive 
+            news coverage and in-depth analysis.
           </p>
           
           <div className="hero-stats">
             <div className="stat">
               <span className="stat-number">24/7</span>
-              <span className="stat-label">Live Coverage</span>
+              <span className="stat-label">Live Updates</span>
             </div>
             <div className="stat">
-              <span className="stat-number">200+</span>
+              <span className="stat-number">100+</span>
               <span className="stat-label">News Sources</span>
             </div>
             <div className="stat">
-              <span className="stat-number">1M+</span>
+              <span className="stat-number">50K+</span>
               <span className="stat-label">Daily Readers</span>
             </div>
           </div>
@@ -68,7 +68,7 @@ export default function Hero() {
           <div className="hero-image-container">
             <div className="hero-image">
               <div className="image-placeholder">
-                <svg width="140" height="140" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                <svg width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
                   <path d="M14 2H6A2 2 0 0 0 4 4V20A2 2 0 0 0 6 22H18A2 2 0 0 0 20 20V8Z"/>
                   <polyline points="14,2 14,8 20,8"/>
                   <line x1="16" y1="13" x2="8" y2="13"/>
@@ -82,20 +82,13 @@ export default function Hero() {
                 <span>Breaking</span>
               </div>
               <div className="floating-card tech-card">
-                <span>Politics</span>
+                <span>Sports</span>
               </div>
               <div className="floating-card tech-card">
-                <span>Sports</span>
+                <span>Tech</span>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      
-      <div className="breaking-news-ticker">
-        <div className="ticker-content">
-          <span className="ticker-label">Breaking</span>
-          <span>Latest updates from around the world • Global markets respond to economic changes • Technology sector sees major developments • Sports headlines from international competitions</span>
         </div>
       </div>
     </section>
