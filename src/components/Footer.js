@@ -10,8 +10,8 @@ export default function Footer() {
         <div className="footer-content">
           <div className="footer-section">
             <div className="footer-brand">
-              <h3>News Portal</h3>
-              <p>Your trusted source for breaking news and current events</p>
+              <h3>Peter Wasonga</h3>
+              <p>Frontend Engineer & AI Enthusiast</p>
             </div>
             <div className="footer-social">
               <a href="https://github.com/Truepele001" target="_blank" rel="noopener noreferrer" className="social-link">
@@ -39,46 +39,35 @@ export default function Footer() {
           </div>
           
           <div className="footer-section">
-            <h4>Categories</h4>
-            <ul className="footer-links">
-              <li><a href="#breaking">Breaking News</a></li>
-              <li><a href="#world">World</a></li>
-              <li><a href="#business">Business</a></li>
-              <li><a href="#technology">Technology</a></li>
-              <li><a href="#sports">Sports</a></li>
-              <li><a href="#entertainment">Entertainment</a></li>
-            </ul>
-          </div>
-          
-          <div className="footer-section">
             <h4>Quick Links</h4>
             <ul className="footer-links">
               <li><a href="/">Home</a></li>
-              <li><a href="/about">About Us</a></li>
+              <li><a href="/work">Work</a></li>
               <li><a href="/contact">Contact</a></li>
-              <li><a href="/privacy">Privacy Policy</a></li>
-              <li><a href="/terms">Terms of Service</a></li>
+              <li><a href="/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
             </ul>
           </div>
           
           <div className="footer-section">
-            <h4>Stay Updated</h4>
-            <div className="newsletter">
-              <p>Subscribe to our newsletter for the latest news updates</p>
-              <div className="newsletter-form">
-                <input 
-                  type="email" 
-                  placeholder="Enter your email"
-                  className="newsletter-input"
-                />
-                <button className="newsletter-btn">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <path d="M7 17L17 7M17 7H7M17 7V17"/>
-                  </svg>
-                </button>
-              </div>
-            </div>
+            <h4>Services</h4>
+            <ul className="footer-links">
+              <li><a href="#web-development">Web Development</a></li>
+              <li><a href="#ui-design">UI/UX Design</a></li>
+              <li><a href="#consulting">Consulting</a></li>
+              <li><a href="#maintenance">Maintenance</a></li>
+            </ul>
+          </div>
+          
+          <div className="footer-section">
+            <h4>Get In Touch</h4>
             <div className="contact-info">
+              <div className="contact-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M21 10C21 17L12 23L3 10C3 6 7 2 12 2S21 6 21 10Z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+                <span>Nairobi, Kenya</span>
+              </div>
               <div className="contact-item">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                   <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z"/>
@@ -86,17 +75,23 @@ export default function Footer() {
                 </svg>
                 <span>wasonga@bricklabsai.org</span>
               </div>
+              <div className="contact-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <circle cx="12" cy="12" r="3"/>
+                  <path d="M12 1V5M12 19V23M4.22 4.22L7.05 7.05M16.95 16.95L19.78 19.78M1 12H5M19 12H23M4.22 19.78L7.05 16.95M16.95 7.05L19.78 4.22"/>
+                </svg>
+                <span>Available for freelance</span>
+              </div>
             </div>
           </div>
         </div>
         
         <div className="footer-bottom">
           <div className="footer-bottom-content">
-            <p>&copy; {currentYear} News Portal. All rights reserved. Built by Peter Wasonga</p>
+            <p>&copy; {currentYear} Peter Wasonga. All rights reserved. Visit: peterwasonga.vercel.app</p>
             <div className="footer-bottom-links">
               <a href="/privacy">Privacy Policy</a>
               <a href="/terms">Terms of Service</a>
-              <a href="/cookies">Cookie Policy</a>
             </div>
           </div>
         </div>
