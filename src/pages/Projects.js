@@ -17,7 +17,7 @@ export default function Projects() {
     }}>
       <div style={{ textAlign: 'center' }}>
         <h2>Redirecting to GitHub...</h2>
-        <p>If you're not redirected automatically, <a href="https://github.com/Truepele001" style={{ color: '#fbbf24' }}>click here</a></p>
+        <p>If you're not redirected automatically, <a href="https://github.com/Truepele001" style={{ color: '#fbbf24' }}>Click here</a></p>
       </div>
     </div>
   );
