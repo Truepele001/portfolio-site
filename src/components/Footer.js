@@ -42,7 +42,7 @@ export default function Footer() {
             <h4>Quick Links</h4>
             <ul className="footer-links">
               <li><a href="/">Home</a></li>
-              <li><a href="/projects">Projects</a></li>
+              <li><a href="/work">Work</a></li>
               <li><a href="/contact">Contact</a></li>
               <li><a href="/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
             </ul>
@@ -88,7 +88,7 @@ export default function Footer() {
         
         <div className="footer-bottom">
           <div className="footer-bottom-content">
-            <p>&copy; {currentYear} Peter Wasonga. All rights reserved.</p>
+            <p>&copy; {currentYear} Peter Wasonga. All rights reserved. Visit: peterwasonga.vercel.app</p>
             <div className="footer-bottom-links">
               <a href="/privacy">Privacy Policy</a>
               <a href="/terms">Terms of Service</a>

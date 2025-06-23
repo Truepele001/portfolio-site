@@ -42,10 +42,10 @@ export default function Navbar() {
           </li>
           <li>
             <Link 
-              to="/projects" 
-              className={location.pathname === '/projects' ? 'active' : ''}
+              to="/work" 
+              className={location.pathname === '/work' || location.pathname === '/projects' ? 'active' : ''}
             >
-              Projects
+              Work
             </Link>
           </li>
           <li>
@@ -80,11 +80,11 @@ export default function Navbar() {
           </li>
           <li>
             <Link 
-              to="/projects" 
-              className={location.pathname === '/projects' ? 'active' : ''}
+              to="/work" 
+              className={location.pathname === '/work' || location.pathname === '/projects' ? 'active' : ''}
               onClick={closeMobileMenu}
             >
-              Projects
+              Work
             </Link>
           </li>
           <li>

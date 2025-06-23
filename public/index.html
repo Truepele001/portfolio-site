@@ -7,22 +7,22 @@
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
-      content="Peter Wasonga - Junior Frontend Engineer & AI Enthusiast. Crafting beautiful, responsive web experiences with modern technologies."
+      content="Peter Wasonga - Junior Frontend Engineer & AI Enthusiast. Crafting beautiful, responsive web experiences with modern technologies. Visit peterwasonga.vercel.app"
     />
-    <meta name="keywords" content="Peter Wasonga, Frontend Engineer, React Developer, JavaScript, Web Development, AI Enthusiast, Portfolio" />
+    <meta name="keywords" content="Peter Wasonga, Frontend Engineer, React Developer, JavaScript, Web Development, AI Enthusiast, Portfolio, peterwasonga.vercel.app" />
     <meta name="author" content="Peter Wasonga" />
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://peterwasonga.dev/" />
+    <meta property="og:url" content="https://peterwasonga.vercel.app/" />
     <meta property="og:title" content="Peter Wasonga - Frontend Engineer & AI Enthusiast" />
-    <meta property="og:description" content="Crafting beautiful, responsive web experiences with modern technologies." />
+    <meta property="og:description" content="Crafting beautiful, responsive web experiences with modern technologies. Visit peterwasonga.vercel.app" />
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://peterwasonga.dev/" />
+    <meta property="twitter:url" content="https://peterwasonga.vercel.app/" />
     <meta property="twitter:title" content="Peter Wasonga - Frontend Engineer & AI Enthusiast" />
-    <meta property="twitter:description" content="Crafting beautiful, responsive web experiences with modern technologies." />
+    <meta property="twitter:description" content="Crafting beautiful, responsive web experiences with modern technologies. Visit peterwasonga.vercel.app" />
     
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
@@ -32,16 +32,64 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     
-    <title>Peter Wasonga - Frontend Engineer & AI Enthusiast</title>
+    <title>Peter Wasonga - Frontend Engineer & AI Enthusiast | peterwasonga.vercel.app</title>
     
     <style>
+      /* Critical CSS to prevent flash of unstyled content */
       body {
         font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #000000 !important;
+        color: #ffffff !important;
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      
+      #root {
+        min-height: 100vh;
+        background-color: #000000 !important;
+      }
+      
+      /* Loading state */
+      .loading-fallback {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background-color: #000000;
+        color: #ffffff;
+        font-family: 'Inter', sans-serif;
+      }
+      
+      .loading-spinner {
+        width: 40px;
+        height: 40px;
+        border: 3px solid rgba(255, 255, 255, 0.1);
+        border-top: 3px solid #ffffff;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+      }
+      
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
       }
     </style>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <div id="root">
+      <div class="loading-fallback">
+        <div class="loading-spinner"></div>
+      </div>
+    </div>
+    
+    <script>
+      // Ensure dark theme is applied immediately
+      document.documentElement.style.backgroundColor = '#000000';
+      document.body.style.backgroundColor = '#000000';
+    </script>
   </body>
 </html>
