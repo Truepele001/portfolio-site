@@ -57,7 +57,7 @@ The design is inspired by modern web aesthetics with:
 ```bash
 git clone https://github.com/Truepele001/portfolio
 cd portfolio
-```
+````
 
 2. Install dependencies
 ```bash
