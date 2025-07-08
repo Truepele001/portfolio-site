@@ -28,7 +28,7 @@ A modern, responsive portfolio website showcasing my work as a Frontend Engineer
 - **Work**: Portfolio showcase with projects and skills
 - **Contact**: Contact form and social links
 
-## 🎨 Design Philosophy
+### 🎨 Design Philosophy
 
 The design is inspired by modern web aesthetics with:
 - Minimalist dark theme
@@ -37,7 +37,7 @@ The design is inspired by modern web aesthetics with:
 - Intuitive navigation
 - Professional color scheme
 
-## 📞 Contact
+### 📞 Contact
 
 - **Email**: wasonga@bricklabsai.org
 - **LinkedIn**: [linkedin.com/in/peterwasonga](https://linkedin.com/in/peterwasonga)
@@ -82,13 +82,13 @@ npm start
 
 The app will be available at `http://localhost:3000`
 
-### Building for Production
+#### Building for Production
 
 ```bash
 npm run build
 ````
 
-## 📄 License
+### 📄 License
 
 This project is open source and available under the [MIT License](LICENSE).
 
