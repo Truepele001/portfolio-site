@@ -94,4 +94,4 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-**Visit the live site**: [peterwasonga.vercel.app](https://peterwasonga.vercel.app)
+***Visit the live site**: [peterwasonga.vercel.app](https://peterwasonga.vercel.app)
