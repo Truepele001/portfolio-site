@@ -46,7 +46,7 @@ The design is inspired by modern web aesthetics with:
 
 ### 🚀 Getting Started
 
-#### Prerequisites
+### Prerequisites
 
 - Node.js (v14 or higher)
 - npm or yarn
