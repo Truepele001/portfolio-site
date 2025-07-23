@@ -28,7 +28,7 @@ A modern, responsive portfolio website showcasing my work as a Frontend Engineer
 - **Work**: Portfolio showcase with projects and skills
 - **Contact**: Contact form and social links
 
-#### 🎨 Design Philosophy
+### 🎨 Design Philosophy
 
 The design is inspired by modern web aesthetics with:
 - Minimalist dark theme
