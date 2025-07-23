@@ -37,7 +37,7 @@ The design is inspired by modern web aesthetics with:
 - Intuitive navigation
 - Professional color scheme
 
-#### 📞 Contact
+### 📞 Contact
 
 - **Email**: wasonga@bricklabsai.org
 - **LinkedIn**: [linkedin.com/in/peterwasonga](https://linkedin.com/in/peterwasonga)
