@@ -22,7 +22,7 @@ A modern, responsive portfolio website showcasing my work as a Frontend Engineer
 - **Icons**: Custom SVG icons
 - **Fonts**: Inter (Google Fonts)
 
-#### 📱 Pages
+#-### 📱 Pages
 
 - **Home**: Hero section with introduction and key stats
 - **Work**: Portfolio showcase with projects and skills
