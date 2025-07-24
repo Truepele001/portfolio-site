@@ -13,7 +13,7 @@ A modern, responsive portfolio website showcasing my work as a Frontend Engineer
 - **Performance Optimized**: Fast loading with optimized assets
 - **SEO Friendly**: Proper meta tags and structured data
 
-### 🛠️ Tech Stack
+#$## 🛠️ Tech Stack
 
 - **Frontend**: React 19, React Router DOM
 - **Styling**: Custom CSS with modern design principles
