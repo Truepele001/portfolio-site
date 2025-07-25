@@ -1,4 +1,4 @@
-##### Peter Wasonga - Portfolio Website
+#### Peter Wasonga - Portfolio Website
 
 A modern, responsive portfolio website showcasing my work as a Frontend Engineer & AI Enthusiast.
 
