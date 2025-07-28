@@ -2,7 +2,7 @@
 
 A modern, responsive portfolio website showcasing my work as a Frontend Engineer & AI Enthusiast.
 
-***Live Site:**** [peterwasonga.vercel.app](https://peterwasonga.vercel.app)
+***Live Site:*** [peterwasonga.vercel.app](https://peterwasonga.vercel.app)
 
 ### 🚀 Features
 
