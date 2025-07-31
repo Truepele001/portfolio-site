@@ -51,7 +51,7 @@ The design is inspired by modern web aesthetics with:
 - Node.js (v14 or higher)
 - npm or yarn
 
-#### Installation
+### Installation
 
 1. Clone the repository
 ```bash
