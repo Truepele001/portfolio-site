@@ -4,7 +4,7 @@ A modern, responsive portfolio website showcasing my work as a Frontend Engineer
 
 ***Live Site:*** [peterwasonga.vercel.app](https://peterwasonga.vercel.app)
 
-#### 🚀 Features
+##### 🚀 Features
 
 - **Modern Design**: Clean, professional interface with dark theme
 - **Responsive**: Optimized for all devices and screen sizes
