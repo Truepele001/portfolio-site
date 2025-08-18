@@ -44,7 +44,7 @@ The design is inspired by modern web aesthetics with:
 - **GitHub**: [github.com/Truepele001](https://github.com/Truepele001)
 - **Twitter**: [twitter.com/peterwasonga](https://twitter.com/peterwasonga)
 
-### 🚀 Getting Started
+#### 🚀 Getting Started
 
 #### Prerequisites
 
