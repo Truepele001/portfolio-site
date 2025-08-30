@@ -88,7 +88,7 @@ The app will be available at `http://localhost:3000`
 npm run build
 ````
 
-### 📄 License
+#### 📄 License
 
 This project is open source and available under the [MIT License](LICENSE).
 
